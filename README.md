@@ -4,7 +4,7 @@ A simple API using `ytdl-core` module to convert and download youtube videos in 
 
 request query takes 3 parameters
 
-host/download?videoURL={urlHere}&itag={itagHere}&format={vidFormatHere}
+`host/download?videoURL={urlHere}&itag={itagHere}&format={vidFormatHere}`
 
 videoURL is a required parameter
 
