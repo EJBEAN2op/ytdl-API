@@ -2,12 +2,14 @@ const express = require('express'),
     app = express(),
     PORT = process.env.PORT || 3000,
     ytdl = require('ytdl-core'),
-    rateLimit = require('express-rate-limit');
+    rateLimit = require('express-rate-limit'),
+    cors = require('cors');
 
 const limiter = rateLimit({
     windowMs: 1 * 60 * 1000, // 1 minute
     max: 10
 });
+app.use(cors());
 
 app.use(limiter);
 
